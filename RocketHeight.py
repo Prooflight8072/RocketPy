@@ -87,6 +87,7 @@ m * delV = delp and Ft
 
 .500 * m * (v**2) - (F * h) = (m * g * h)
 '''
+
 F = int(((pC * A) / 2) * v ** 2) 
 x = int((.500 * m * (v**2)))
 y = int((m * g + F))
