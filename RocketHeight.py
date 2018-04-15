@@ -1,7 +1,5 @@
 import sys
 import os
-
-'''
 NAME = ('Main')
 
 def config():
@@ -11,11 +9,17 @@ def config():
     print("(3)(001948 - Big Bertha)")
 	print("(0)Nevermind please take me back (Returns to Main Menu)")
 	rocket_choice = input('>>  ')
+	if rocket_choice == ('1'):
+		rocket_type = ('Alpha')
+	if rocket_choice == ('2'):
+		rocket_type = ('Baby')
+	if rocket_choice == ('3'):
+		rocket_type = ('Big')
 	
 def launch():
-    print('Hallo! Sind wir eine Rakete starten?')
-    print(' 1. Ja start die Rakete')
-    print(' 0. Nein, Wir sollen zuruek gehen')
+    print('Make sure your rocket is configured before launching')
+    print(' 1. Launch the rocket')
+    print(' 0. No Take Me Back')
     menu_choice = input('>>  ')
     if menu_choice == ('0'):
         main_menu()
@@ -25,7 +29,7 @@ def launch():
 
 def configure_rocket_menu():
     print(' 1. To config')
-    print(' 0. GEH ZURUEK!!!')
+    print(' 0. Go back')
     menu_choice = input('>>  ')
     if menu_choice == ('0'):
         main_menu()
@@ -40,7 +44,6 @@ def exit():
 
 def main_menu():
     print('Welcome,')
-    print('###Disclaimer: Our current equations do not currently support liquid state fuel###')
     print('Select a Menu Bellow')
     print(' 1. Launch')
     print(' 2. Configure Rocket')
@@ -55,15 +58,13 @@ def main_menu():
 
 if NAME == ('Main'):
     main_menu()
+'''
 ###################
-
-
 001598 - A8-3 STANDARD ENGINE (001225 - Alpha Rocket)(001261 - Baby Bertha)
 001601 - B4-2 STANDARD ENGINE (001948 - Big Bertha)
 001602 - B4-4 STANDARD ENGINE (001225 - Alpha®)(001261 - Baby Bertha)
-
-
 ###################
+'''
 def velocitycalc():
 	distance = input('How far are you traveling? km')
 	time = input('how long do you want to take getting there? min')
@@ -80,18 +81,12 @@ def accelcalc():
 	acceltime = (vel / finini)
 	print (acceltime , 'km/min')
 
+def height_find():
+	A = int(math.py() * (r**2))
+	Fx = int((0.45*0.25)* A)
+	Fy = int(2)
+	Ffin = ((Fx / Fy)*r**2)
 
-delP = Ft
-m * delV = delp and Ft
-
-
-.500 * m * (v**2) - (F * h) = (m * g * h)
-'''
-
-F = int(((pC * A) / 2) * v ** 2) 
-x = int((.500 * m * (v**2)))
-y = int((m * g + F))
-launch_height = int(x/y)
 
 
 
